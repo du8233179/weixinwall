@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import "va";
+//遮罩层
+.data_mask{
+  width:100%;
+  height: 100%;
+  position: fixed;
+  background-color: $text_darken_color;
+  opacity: 0.7;
+  z-index: 3;
+  display: none;
+}
+//照片选择
+.photo_select{
+  position: fixed;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  bottom: -200px;
+  z-index: 6;
+
+  .take{
+    height: 36px;
+    line-height: 36px;
+    background: $white_back;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid $text_darken_color;
+  }
+  .select{
+    height: 36px;
+    line-height: 36px;
+    background: $white_back;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid $text_darken_color;
+  }
+
+}
+.set_password_hint{
+  position: fixed;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  bottom: -200px;
+  z-index: 6;
+
+  .old_password{
+    height: 36px;
+    line-height: 36px;
+    background: $white_back;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid $text_darken_color;
+  }
+  .phone_test{
+    height: 36px;
+    line-height: 36px;
+    background: $white_back;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid $text_darken_color;
+  }
+
+}
+.cancel{
+     height: 36px;
+     line-height:36px;
+     background: $white_back;
+     text-align: center;
+     border-radius: 5px;
+     font-size: 13px;
+     margin-top: 10px;
+   }
+.safe_set {
+  height: 40px;
+  padding-left: 18px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.message_data_content {
+  background: #fff;
+  padding-left: 17px;
+  > div {
+    height: 40px;
+    border-bottom: 1px solid $text_lighten_color;
+   > p {
+      float: left;
+      line-height: 40px;
+
+    }
+    > div {
+      float: right;
+      width: 240px;
+      height: 40px;
+      line-height: 40px;
+      > b {
+        width: 10px;
+        height: 10px;
+        float: right;
+        margin-top: 14px;
+        margin-right: 10px;
+        background: url("/images/icon.png") no-repeat -44px -313px;
+        background-size: 168px;
+      }
+      >span{
+        float:right;
+        margin-right: 5px;
+        color: $text_lighten_color;
+      }
+    }
+  }
+
+}

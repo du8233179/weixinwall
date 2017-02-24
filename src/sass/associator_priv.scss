@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "va";
+.associator_privilege{
+  background-color:#fff;
+  padding: 58px 19px 0px 19px;
+  h4{
+    margin-top:10px;
+    height: 25px;
+    line-height: 25px;
+  }
+  ul{
+    margin-left:18px;
+    list-style:inherit;
+    margin-bottom:12px;
+    li{
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+}

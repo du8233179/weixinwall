@@ -1,0 +1,119 @@
+.data_mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #333333;
+  opacity: 0.7;
+  z-index: 3;
+  display: none;
+}
+
+.photo_select {
+  position: fixed;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  bottom: -200px;
+  z-index: 6;
+}
+.photo_select .take {
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid #333333;
+}
+.photo_select .select {
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid #333333;
+}
+
+.set_password_hint {
+  position: fixed;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  bottom: -200px;
+  z-index: 6;
+}
+.set_password_hint .old_password {
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid #333333;
+}
+.set_password_hint .phone_test {
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid #333333;
+}
+
+.cancel {
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.safe_set {
+  height: 40px;
+  padding-left: 18px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.message_data_content {
+  background: #fff;
+  padding-left: 17px;
+}
+.message_data_content > div {
+  height: 40px;
+  border-bottom: 1px solid #999999;
+}
+.message_data_content > div > p {
+  float: left;
+  line-height: 40px;
+}
+.message_data_content > div > div {
+  float: right;
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+}
+.message_data_content > div > div > b {
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin-top: 14px;
+  margin-right: 10px;
+  background: url("/images/icon.png") no-repeat -44px -313px;
+  background-size: 168px;
+}
+.message_data_content > div > div > span {
+  float: right;
+  margin-right: 5px;
+  color: #999999;
+}
+
+/*# sourceMappingURL=message_mydata.css.map */

@@ -1,0 +1,20 @@
+.associator_privilege {
+  background-color: #fff;
+  padding: 58px 19px 0px 19px;
+}
+.associator_privilege h4 {
+  margin-top: 10px;
+  height: 25px;
+  line-height: 25px;
+}
+.associator_privilege ul {
+  margin-left: 18px;
+  list-style: inherit;
+  margin-bottom: 12px;
+}
+.associator_privilege ul li {
+  height: 20px;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=associator_priv.css.map */

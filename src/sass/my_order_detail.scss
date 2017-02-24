@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import "va";
+
+.worry_order{
+  height:50px;
+  background-color: $white_back;
+  border-bottom:1px solid $text_lighten_color;
+  p{
+   width:80px;
+    height:30px;
+    float:right;
+    margin-top:10px;
+    margin-right: 20px;
+    font-size:15px;
+    color:$text_white_color;
+    line-height: 30px;
+    text-align:center;
+    background-color: $text_darken_color;
+
+  }
+}
+//一件商品的信息及数量
+.order_detail_item{
+  margin-top:10px;
+  width: 100%;
+  height: 80px;
+  background-color: $white_back;
+  border-bottom: 1px solid $text_darken_color+100;
+  img {
+    width: 69px;
+    height: 69px;
+    margin-top: 6px;
+    margin-left: 10px;
+    border-radius: 5px;
+    float: left;
+    position: absolute;
+  }
+  div {
+    width: 100%;
+    padding-left: 85px;
+    float: left;
+    padding-top: 6px;
+    p {
+      font-size: 14px;
+      font-weight: 700;
+      height: 15px;
+      overflow: hidden;
+    }
+    h6 {
+      margin-top: 10px;
+      font-weight: 500;
+      height: 12px;
+      overflow: hidden;
+    }
+    h5 {
+      margin-top: 17px;
+      font-size: 15px;
+      color: $text_red_color;
+    }
+  }
+  h4{
+    width: 80px;
+    float: right;
+    margin-top: 10px;
+    position: absolute;
+    right: 0px;
+    color: $text_darken_color+90;
+    font-size:25px;
+    font-weight:100;
+    span{
+      color:$text_red_color;
+      font-size:12px;
+    }
+    >b{
+      display: inline-block;
+      width: 12px;
+      position: relative;
+      top: 4px;
+      height: 20px;
+      background: url("/images/icon_store.png") -172px 0px no-repeat;
+    }
+    >p{
+      font-size:12px;
+      padding-left:30px;
+      margin-bottom: 20px;
+      font-weight:100;
+    }
+  }
+}
+//统计
+.order_detail_statistics{
+  padding:20px;
+  font-size: 14px;
+
+  //总价
+  p{
+    margin-top:15px;
+
+    span{
+
+      color: $text_lighten_color;
+    }
+  }
+}
+

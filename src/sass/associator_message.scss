@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import "va";
+
+.head_photo{
+
+  padding-top: 55px;
+  text-align: center;
+  background-color: $white_back;
+  >div{
+    width: 60px;
+    height: 60px;
+    margin: 0px auto 6px auto;
+    >img{
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+  >b{
+    margin: 0px auto;
+    position: relative;
+    >span{
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      top: -3px;
+      margin-left: 5px;
+    }
+  }
+  >p{
+    margin-top: 10px;
+    padding-bottom: 11px;
+  }
+
+}
+.associator_icon{
+  background: url("/images/icon.png") no-repeat 0px -350px;
+  background-size: 168px;
+}
+//俩个信息
+.three_message{
+  background-color:$white_back;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top:10px;
+
+    ul{
+      height:40px;
+      li{
+        float: left;
+        width:50%;
+        text-align: center;
+        height: 40px;;
+        p{
+         font-size: 15px;
+          color:$text_red_color;
+        }
+        div{
+          margin-top: 9px;
+          font-size: 14px;
+        }
+       }
+      .coupon{
+        border-left:1px solid $text_darken_color+160;
+
+        p{
+          color:#f22;
+        }
+
+      }
+
+    }
+}
+//地址
+.address{
+  height: 39px;
+ line-height: 39px;
+  b{
+    margin-left: 20px;
+  }
+}
+.associator_message_content{
+  background: #fff;
+  padding-left: 17px;
+  margin-bottom:58px;
+  padding-bottom:60px;
+  >div{
+    height: 40px;
+    border-bottom: 1px solid $text_lighten_color;
+    >b{
+      float: left;
+      line-height: 40px;
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+      margin-top: 11px;
+    }
+    >p{
+      float: left;
+      line-height: 40px;
+
+    }
+    >div{
+      float: right;
+      width:72px;
+      height: 40px;
+      line-height: 40px;
+      >b{
+        width:10px;
+        height: 10px;
+        float:right;
+        margin-top: 14px;
+        margin-right: 10px;
+        background: url("/images/icon.png") no-repeat -44px -313px;
+        background-size: 168px;
+      }
+    }
+  }
+}
+.message_myorder{
+  >b{
+    background: url("/images/icon.png") no-repeat -97px -48px;
+    background-size: 168px;
+  }
+  >div{
+    >span{
+      color:$text_darken_color+80;
+    }
+  }
+}
+.message_myreserve{
+  >b{
+    background: url("/images/icon.png") no-repeat -97px -84px;
+    background-size: 168px;
+  }
+}
+.message_mycoupon{
+  >b{
+    background: url("/images/icon.png") no-repeat -97px -122px;
+    background-size: 168px;
+  }
+}
+.message_grade{
+  >b{
+    background: url("/images/icon.png") no-repeat -97px -159px;
+    background-size: 168px;
+  }
+  >div{
+    >span{
+      color:$text_lighten_color;
+      margin-left:20px;
+    }
+  }
+}
+.message_mydata{
+  >b{
+    background: url("/images/icon.png") no-repeat -97px -196px;
+    background-size: 168px;
+  }
+}
+.message_weal{
+  >b{
+    background: url("/images/icon.png") no-repeat -97px -233px;
+    background-size: 168px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

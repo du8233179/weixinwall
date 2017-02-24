@@ -1,0 +1,149 @@
+.head_photo {
+  padding-top: 55px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.head_photo > div {
+  width: 60px;
+  height: 60px;
+  margin: 0px auto 6px auto;
+}
+.head_photo > div > img {
+  height: 60px;
+  border-radius: 50%;
+}
+.head_photo > b {
+  margin: 0px auto;
+  position: relative;
+}
+.head_photo > b > span {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: -3px;
+  margin-left: 5px;
+}
+.head_photo > p {
+  margin-top: 10px;
+  padding-bottom: 11px;
+}
+
+.associator_icon {
+  background: url("/images/icon.png") no-repeat 0px -350px;
+  background-size: 168px;
+}
+
+.three_message {
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+.three_message ul {
+  height: 40px;
+}
+.three_message ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 40px;
+}
+.three_message ul li p {
+  font-size: 15px;
+  color: #e10000;
+}
+.three_message ul li div {
+  margin-top: 9px;
+  font-size: 14px;
+}
+.three_message ul .coupon {
+  border-left: 1px solid lightgray;
+}
+.three_message ul .coupon p {
+  color: #f22;
+}
+
+.address {
+  height: 39px;
+  line-height: 39px;
+}
+.address b {
+  margin-left: 20px;
+}
+
+.associator_message_content {
+  background: #fff;
+  padding-left: 17px;
+  margin-bottom: 58px;
+  padding-bottom: 60px;
+}
+.associator_message_content > div {
+  height: 40px;
+  border-bottom: 1px solid #999999;
+}
+.associator_message_content > div > b {
+  float: left;
+  line-height: 40px;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  margin-top: 11px;
+}
+.associator_message_content > div > p {
+  float: left;
+  line-height: 40px;
+}
+.associator_message_content > div > div {
+  float: right;
+  width: 72px;
+  height: 40px;
+  line-height: 40px;
+}
+.associator_message_content > div > div > b {
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin-top: 14px;
+  margin-right: 10px;
+  background: url("/images/icon.png") no-repeat -44px -313px;
+  background-size: 168px;
+}
+
+.message_myorder > b {
+  background: url("/images/icon.png") no-repeat -97px -48px;
+  background-size: 168px;
+}
+.message_myorder > div > span {
+  color: #838383;
+}
+
+.message_myreserve > b {
+  background: url("/images/icon.png") no-repeat -97px -84px;
+  background-size: 168px;
+}
+
+.message_mycoupon > b {
+  background: url("/images/icon.png") no-repeat -97px -122px;
+  background-size: 168px;
+}
+
+.message_grade > b {
+  background: url("/images/icon.png") no-repeat -97px -159px;
+  background-size: 168px;
+}
+.message_grade > div > span {
+  color: #999999;
+  margin-left: 20px;
+}
+
+.message_mydata > b {
+  background: url("/images/icon.png") no-repeat -97px -196px;
+  background-size: 168px;
+}
+
+.message_weal > b {
+  background: url("/images/icon.png") no-repeat -97px -233px;
+  background-size: 168px;
+}
+
+/*# sourceMappingURL=associator_message.css.map */

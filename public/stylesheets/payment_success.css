@@ -1,0 +1,60 @@
+.success_head {
+  margin-top: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  color: #e10000;
+  font-weight: 600;
+}
+.success_head span {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  position: relative;
+  top: 12px;
+  margin-right: 7px;
+  background: url("/images/icon.png") no-repeat -135px 0px;
+  background-size: 168px;
+}
+
+.payment_success_content {
+  width: 80%;
+  margin: 0px auto;
+  padding: 16px 16px 40px 16px;
+  background-color: #ffffff;
+}
+.payment_success_content > p:nth-child(1) {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 14px;
+  color: #838383;
+}
+.payment_success_content > p:nth-child(2) {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 22px;
+}
+.payment_success_content > p:nth-child(2) > s {
+  font-size: 12px;
+  color: #838383;
+}
+.payment_success_content > p:nth-child(3) {
+  text-align: center;
+  color: #e10000;
+  margin-bottom: 20px;
+}
+.payment_success_content table {
+  color: #838383;
+  width: 100%;
+  margin-top: 20px;
+}
+.payment_success_content table tr {
+  height: 35px;
+}
+.payment_success_content table tr > td:nth-child(2) {
+  text-align: end;
+}
+
+/*# sourceMappingURL=payment_success.css.map */

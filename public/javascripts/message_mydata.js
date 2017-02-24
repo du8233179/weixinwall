@@ -1,0 +1,40 @@
+/**
+ * Created by Personal on 2016/7/30.
+ */
+$(function(){
+    window.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    });
+    FastClick.attach(document.body);
+    $(".head_photo>div>img").click(function(){
+        $(".data_mask").fadeIn(200);
+        $(".photo_select").animate({
+            bottom:"6px"
+        },200);
+    });
+    $(".old_password").click(function(){
+        location.href="/html/old_password.html";
+    });
+    $(".set_password").click(function(){
+        $(".data_mask").fadeIn(200);
+        $(".set_password_hint").animate({
+            bottom:"6px"
+        },200);
+    });
+    $(".phone_test").click(function(){
+       location.href="/html/phone_setpassword.html";
+    });
+    $(".cancel").click(function(){
+        $(".data_mask").fadeOut(200);
+        $(".set_password_hint").animate({
+            bottom:"-200px"
+        },200);
+        $(".photo_select").animate({
+            bottom:"-200px"
+        },200);
+    });
+    $(".set_payword").click(function(){
+       location.href="/html/set_payment.html";
+    });
+
+});

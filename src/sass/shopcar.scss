@@ -1,0 +1,302 @@
+@charset "utf-8";
+@import "va";
+
+//主体
+.shopcar_content {
+ padding-top: 50px;
+  .shopcar_content_item {
+    ul {
+      overflow: hidden;
+      li {
+        float: left;
+      }
+      li:nth-child(1) {
+        width: 40px;
+        position: absolute;
+        height: 70px;
+        > b {
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin-top: 24px;
+          margin-left: 10px;
+          border: 1px solid $text_darken_color+80;
+          border-radius: 50%;
+
+        }
+      }
+      li:nth-child(2) {
+        height: 70px;
+        width: 70px;
+        padding: 3px;
+        position: absolute;
+        left: 40px;
+        > img {
+          height: 100%;
+        }
+      }
+      li:nth-child(3) {
+        width: 100%;
+        height: 70px;
+        padding-left: 117px;
+        padding-right: 10px;
+        > div {
+          border-bottom: 1px solid $text_lighten_color;
+          > header {
+            padding-top: 5px;
+            font-size: 14px;
+            height: 18px;
+
+          }
+          > p {
+            margin-top: 5px;
+            color: $text_lighten_color;
+            height: 12px;
+          }
+          > footer {
+            margin-top: 16px;
+            position: relative;
+            height: 16px;
+            color: $text_lighten_color;
+
+            > p {
+              float: left;
+            }
+            > div {
+              width: 113px;
+              position: absolute;
+              right: 0px;
+              float: right;
+              top: -17px;
+              color: #333333;
+              > .shopcar_add {
+                float: left;
+                width: 25px;
+                height: 25px;
+                background: url("/images/icon.png") no-repeat 0px -334px;
+                background-size: 230px;
+                border-radius: 50%;
+                margin-right: 5px;
+              }
+              > .count {
+                float: left;
+                width: 43px;
+                height: 22px;
+                margin-top: 2px;
+                margin-right: 5px;
+                text-align: center;
+                border-radius: 5px;
+                border: 1px solid #999999;
+                line-height: 21px;
+              }
+              > .shopcar_less {
+                float: left;
+                width: 25px;
+                height: 25px;
+                background: url("/images/icon.png") no-repeat -58px -334px;
+                background-size: 230px;
+                border-radius: 50%;
+                margin-right:6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//删除按钮
+.remove {
+  position: absolute;
+  height: 67px;
+  width: 80px;
+  background: $text_red_color;
+  line-height: 67px;
+  text-align: center;
+  font-size: 18px;
+  color: $text_white_color;
+  right: -80px;
+}
+
+//购物车
+.shopcar {
+  position: absolute;
+  top: -11px;
+  right: -6px;
+  width: 20px;
+  line-height: 20px;
+  height: 20px;
+  background:$text_red_color;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+//选中的样式
+.checked {
+  background: url("/images/icon.png") no-repeat -2px -199px;
+  background-size: 168px;
+}
+
+.shopcar_down_order {
+  position: fixed;
+  bottom: 50px;
+  height: 44px;
+  width: 100%;
+  z-index: 3;
+  max-width: 768px;
+  background-color: $white_back;
+  > div {
+    overflow: hidden;
+    > ul {
+      overflow: hidden;
+      > li {
+        float: left;
+      }
+      > li:nth-child(1) {
+        width: 80px;
+        position: absolute;
+        height: 44px;
+        > p {
+          height: 44px;
+          line-height: 44px;
+          > b {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $text_darken_color+80;
+            background-size: 168px;
+            float: left;
+            margin-top: 11px;
+            margin-left: 10px;
+            border-radius: 50%;
+          }
+          > span {
+            float: left;
+            margin-left: 8px;
+          }
+        }
+      }
+      > li:nth-child(2) {
+        width: 100%;
+        height: 44px;
+        padding-left: 80px;
+        padding-right: 90px;
+        text-align: end;
+        > p {
+          color: #f00;
+          font-size: 16px;
+          margin-top: 6px;
+        }
+        > div {
+          margin-top: 3px;
+          color: $text_lighten_color;
+        }
+      }
+      > li:nth-child(3) {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 44px;
+        width: 80px;
+        line-height: 44px;
+        background-color: $text_darken_color;
+        text-align: center;
+        color: $text_white_color;
+      }
+    }
+  }
+}
+.shopcar_hint {
+  p {
+    display: none;
+  }
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  width: 60%;
+  height: 130px;
+  border-radius: 8px;
+  background-color: $white_back;
+  margin-left: -30%;
+  margin-top: -65px;
+  z-index: 13;
+  div {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    span {
+      display: inline-block;
+      float: left;
+      width: 40%;
+      margin-right: 5%;
+      margin-left: 5%;
+      margin-top: 24px;
+      height: 30px;
+      color: $text_white_color;
+
+      line-height: 30px;
+      background-color:$text_darken_color
+    }
+    b {
+      display: inline-block;
+      float: right;;
+      width: 40%;
+      margin-right: 5%;
+      margin-left: 5%;
+      margin-top: 24px;
+      height: 30px;
+      color: $text_white_color;
+     line-height: 30px;
+      background-color:$text_darken_color
+    }
+  }
+
+}
+//去购物提示
+.go_shopping {
+  display: none;
+  width: 80%;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -40%;
+  text-align: center;
+  z-index: 13;
+  color: $text_lighten_color;
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  a {
+    padding: 10px 16px 10px 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 138px;
+    font-size: 15px;
+    margin: 0px auto;
+    background: #333;
+    border-radius: 2px;
+  }
+}
+//遮罩层
+.shopcar_mask {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+ background-color:$text_darken_color;
+  opacity: 0.7;
+  z-index: 11;
+
+}

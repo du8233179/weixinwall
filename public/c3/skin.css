@@ -1,0 +1,151 @@
+/*font picture*/
+.fonts {
+  color: #fff;
+}
+
+.fonts .span1 {
+  background: url("../images/A.png") no-repeat 0 0;
+  background-size: 100%;
+  margin-left: 10px;
+}
+
+.fonts .span2 {
+  background: url("../images/G.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+.fonts .span3 {
+  background: url("../images/O.png") no-repeat 0 0;
+  background-size: 100%;
+  margin: 0 30px 0 0;
+}
+
+.fonts .span4 {
+  background: url("../images/K.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+.fonts .span5 {
+  background: url("../images/A.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+.fonts .span6 {
+  background: url("../images/R.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+.fonts .span7 {
+  background: url("../images/A.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+.line {
+  width: 80%;
+  height: 42px;
+  margin: 0px auto;
+  background: url("../images/line.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+/*first view*/
+.view1 {
+  background: #231f20;
+}
+
+.bg {
+  background: url("../images/Bitmap.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+/*menu*/
+.menu_all {
+  background: #000;
+}
+
+/*login*/
+.login_all {
+  background: #231f20;
+}
+
+.close {
+  background: url("../images/close.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+.error {
+  color: #fff;
+}
+
+.check {
+  background: #fff;
+}
+
+.remember {
+  color: #fff;
+}
+
+.login {
+  color: #e60012;
+}
+
+/*enroll*/
+.login_all_z {
+  background: #231f20;
+}
+
+.close_z {
+  background: url("../images/close.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+.error_z {
+  color: #fff;
+}
+
+.remember_z {
+  color: #fff;
+}
+
+.login_z {
+  color: #e60012;
+}
+
+/*position nav*/
+.nav, .nav_fixed {
+  background: #000;
+}
+
+.on #waves li span, .off #waves li span {
+  /*background: radial-gradient(transparent 0%, rgba(255, 255, 255, 1) 100%);*/
+  background: #fff;
+}
+
+.logo {
+  background: url("../images/logo.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
+/*login button*/
+.enroll {
+  color: #fff;
+}
+
+/*enroll button*/
+.login_s {
+  color: #fff;
+}
+
+.bar {
+  background: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+  .logo {
+    width: 182px;
+    height: 39px;
+    background-size: 90%;
+  }
+}
+
+/*# sourceMappingURL=skin.css.map */

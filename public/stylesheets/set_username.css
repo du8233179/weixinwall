@@ -1,0 +1,38 @@
+.username_content {
+  margin-top: 50px;
+  background: #fff;
+  padding-left: 17px;
+  margin-bottom: 10px;
+}
+.username_content > div {
+  height: 40px;
+  border-bottom: 1px solid #eee;
+  line-height: 40px;
+}
+.username_content > div input {
+  border: none;
+  margin-left: 0px;
+  outline: medium;
+  width: 230px;
+  height: 25px;
+}
+.username_content > div input:focus {
+  border: none;
+  box-shadow: none;
+  font-weight: 100;
+}
+
+.confirm_set {
+  margin: 18px auto 0px auto;
+  width: 88%;
+  height: 40px;
+  line-height: 39px;
+  text-align: center;
+  border: 1px solid #ff00ff;
+  border-radius: 5px;
+  color: #ff00ff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=set_username.css.map */

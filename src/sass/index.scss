@@ -1,0 +1,390 @@
+@charset "utf-8";
+@import "va";
+@import "shopcar";
+@import "item_detail";
+@import "order_confirm";
+@import "payment_mode";
+@import "payment_success";
+@import "associator_message";
+@import "my_order";
+@import "my_order_detail";
+@import "my_pref";
+@import "associator_pay";
+@import "associator_priv";
+@import "message_mydata";
+@import "phone_setpassword";
+@import "old_password";
+@import "set_payment";
+@import "set_payment_password";
+@import "amend_payment_password";
+@import "apply_associator";
+
+* {
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body {
+  width: 100%;
+  max-width: 768px;
+  min-width: 320px;
+  margin: 0px auto;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+#darken_body {
+  background-color: $logo_color;
+}
+
+#lighten_body {
+  background-color: $white_back;
+}
+
+.mall_logo {
+  height: 45px;
+  background-color: #eeeeee;
+  text-align: center;
+  line-height: 45px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index:10;
+  max-width: 768px;
+  > span {
+    display: inline-block;
+    width: 33px;
+    background: url("/images/icon.png") no-repeat -83px 0px;
+    background-size: 168px;
+    height: 33px;
+    margin-top: 5px;
+
+  }
+  > b {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none;
+  }
+}
+
+.icon_kuai {
+  background: url("/images/icon.png") no-repeat 0px -160px;
+  background-size: 168px;
+}
+
+.icon_tiao {
+  background: url("/images/icon.png") no-repeat -42px -159px;
+  background-size: 168px;
+}
+
+.mall_head {
+  height: 53px;
+  overflow:hidden;
+  position: fixed;
+  //-webkit-overflow-scrolling: touch;
+
+  top: 43px;
+  width: 100%;
+  z-index: 10;
+  background-color: $white_back;
+  max-width: 768px;
+  > ul {
+    width: 10000px;
+    position:relative;
+    left:0;
+    line-height: 21px;
+    font-size: 14px;
+    color: $text_lighten_color;
+    height: 48px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $text_lighten_color;
+    > b {
+      width: 0px;
+      height: 3px;
+      background: #000;
+      display: block;
+      position: relative;
+      top:37px;
+      left: 23px;
+    }
+    > li {
+      float: left;
+      margin: 0px 23px;
+      height: 42px;
+      padding-top: 12px;
+    }
+  }
+
+}
+
+.color_darken {
+  color: $text_darken_color;
+  font-weight: bold;
+}
+#parent1,#parent2{
+  height: 100%;
+}
+.scroll{
+  overflow: hidden;
+}
+.mall_body {
+  padding-bottom: 62px;
+  padding-top:88px;
+  overflow: hidden;
+
+}
+
+
+//块展示
+.kuai_show {
+  >div{
+    position:relative ;
+    >b {
+      position: absolute;
+      width: 45%;
+      height: 45%;
+      right: 0px;
+
+      >img{
+        width:100%;
+       }
+    }
+  }
+  padding: 0px 2%;
+  width: 50%;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  > header {
+    margin-top: 10px;
+    font-size: 14px;
+
+  }
+  > section {
+    margin-top: 6px;
+    color: $text_lighten_color;
+  }
+  > footer {
+    margin-top: 7px;
+    color: $text_lighten_color;
+    >span{
+      color:$text_red_color;
+    }
+  }
+  > b {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("/images/icon.png") no-repeat 0px -79px;
+    background-size: 168px;
+    bottom: 0px;
+    right: 7px;
+  }
+}
+
+//条展示
+.tiao_show {
+  width: 100%;
+  height: 74px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  >div{
+    width:62px;
+    height: 62px;
+    margin-top: 6px;
+    margin-left: 10px;
+    position: absolute;
+    >img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+
+    }
+    >b{
+      position: absolute;
+      width: 45%;
+      height:45%;
+      right: 0px;
+ }
+  }
+
+  > header {
+    padding-left: 87px;
+    font-size: 14px;
+    padding-top: 10px;
+
+  }
+  > section {
+    padding-left: 87px;
+    font-size: 13px;
+    padding-top: 4px;
+    color: $text_lighten_color;
+  }
+  > footer {
+    padding-left: 87px;
+    font-size: 14px;
+    padding-top: 8px;
+    color: $text_lighten_color;
+    >span{
+      color:$text_red_color;
+    }
+  }
+  > b {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("/images/icon.png") no-repeat 0px -79px;
+    background-size: 168px;
+    bottom: 8px;
+    right: 20px;
+  }
+}
+//推荐展示
+.recommend{
+  overflow: hidden;
+  position: relative;
+
+  //height:160px;
+  margin: 0px 2%;
+  margin-bottom:5px;
+  >div{
+    overflow: hidden;
+    //height:160px;
+    >img{
+      height:100%;
+      width: 100%;
+    }
+    >b{
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 25%;
+    }
+  }
+  >header{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 30px;
+    background: #333;
+    opacity: 0.6;
+    color: #fff;
+    line-height: 30px;
+    padding-left: 13px;
+  }
+  >section{
+    display: none;
+  }
+  >footer{
+    position: absolute;
+    bottom: 0px;
+    right: 12px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+  }
+  >b{
+    display: none;
+  }
+}
+.nav {
+  background-color: $white_back;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  max-width: 768px;
+  z-index: 12;
+  > ul {
+    height: 50px;
+    color:$text_lighten_color;
+    > li {
+      float: left;
+      width: 25%;
+      height: 50px;
+      > b {
+        display: block;
+        margin: 4px auto 2px auto;
+        width: 30px;
+        height: 25px;
+        position: relative;
+      }
+    }
+    > li:nth-child(1) {
+      b {
+        background: url("/images/icon.png") no-repeat -38px 1px;
+        background-size: 168px;
+      }
+    }
+    > li:nth-child(2) {
+      b {
+        background: url("/images/icon.png") no-repeat -38px -39px;
+        background-size: 168px;
+      }
+    }
+    > li:nth-child(3) {
+      b {
+        background: url("/images/icon.png") no-repeat -38px -79px;
+        background-size: 168px;
+      }
+    }
+    > li:nth-child(4) {
+      b {
+        background: url("/images/icon.png") no-repeat -38px -119px;
+        background-size: 168px;
+      }
+    }
+
+
+  }
+}
+#n2{
+  b{
+
+    background: url("/images/icon.png") no-repeat 4.5px -39px;
+    background-size: 168px;
+  }
+color:$text_darken_color;
+  }
+#n3{
+  b{
+
+    background: url("/images/icon.png") no-repeat 4px -79px;
+    background-size: 168px;
+  }
+  color:$text_darken_color;
+}
+#n4{
+  b{
+
+    background: url("/images/icon.png") no-repeat 4px -119px;
+    background-size: 168px;
+  }
+  color:$text_darken_color;
+}
+.item_id {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
